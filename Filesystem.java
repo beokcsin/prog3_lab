@@ -145,7 +145,10 @@ public class Filesystem
 		}
 		in.close();
 	}
-	
+	/*
+ 	TODO: nem ertem hogy kellene pattern alapjan matchelni
+  		exceptiont dob barmilyen bemenetre
+	*/
 	private void grep(String[] cmd) throws FileNotFoundException, IOException
 	{	
 		File f = new File(dir, cmd[2]);
