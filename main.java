@@ -1,6 +1,7 @@
 package lab3;
 import java.io.*;
-
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class main 
 {
@@ -14,7 +15,7 @@ public class main
 		}
 		catch(IOException ex)
 		{
-			
+			Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
 		}
 	}
 }
